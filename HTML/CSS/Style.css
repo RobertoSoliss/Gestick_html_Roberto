@@ -105,6 +105,152 @@ body {
 /*MODAL*/
 
 
+/*Modal Perfil*/
+
+.profile__cta{
+    transition: background-color .3s;
+}
+
+.part_container{
+    display: flex;
+    
+}
+
+.modal__title{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 2.5rem;
+}
+
+.modal__paragraph{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 1125px;
+    right: 0;
+    bottom: 400px;
+    display: grid;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+
+.modal__close{
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    font-weight: 30;
+    transition: background-color .3s;
+}
+
+.modal__close:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.modal_2{
+    position: fixed;
+    top: 0;
+    left: 1125px;
+    right: 0;
+    bottom: 400px;
+    display: grid;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show_2{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container_2{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+
+.modal__close_2{
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    font-weight: 30;
+    transition: background-color .3s;
+}
+.modal__close_2:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+@media (max-width:800px) {
+    .modal__container{
+        padding: 2em 2em;
+    }
+
+    .modal__title{
+        font-size: 1rem;
+    }
+
+    .modal__container_2{
+        padding: 2em 2em;
+    }
+
+    .modal__title_2{
+        font-size: 1rem;
+    }
+}
+/*Modal Perfil*/
 
 
 
