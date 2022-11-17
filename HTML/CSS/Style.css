@@ -108,6 +108,17 @@ body {
 /*Modal Perfil*/
 
 .profile__cta{
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.profile__cta_2{
+    text-decoration: none;
+    color: #000;
+    padding: 1px 1px;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-weight: 500;
     transition: background-color .3s;
 }
 
@@ -128,7 +139,7 @@ body {
     margin-bottom: 10px;
 }
 
-.modal{
+.modal_1{
     position: fixed;
     top: 0;
     left: 1125px;
@@ -142,7 +153,7 @@ body {
     --transition: transform .8s;
 }
 
-.modal--show{
+.modal--show_1{
     opacity: 1;
     pointer-events: unset;
     transition: opacity .6s;
@@ -150,7 +161,7 @@ body {
     --transition: transform .8s .8s;
 }
 
-.modal__container{
+.modal__container_1{
     margin: auto;
     width: 90%;
     max-width: 600px;
@@ -166,7 +177,7 @@ body {
 }
 
 
-.modal__close{
+.modal__close_1{
     justify-content: center;
     text-decoration: none;
     color: #000;
@@ -176,7 +187,7 @@ body {
     transition: background-color .3s;
 }
 
-.modal__close:hover{
+.modal__close_1:hover{
     color: #000;
     background-color: #fff;
 }
@@ -234,11 +245,11 @@ body {
 }
 
 @media (max-width:800px) {
-    .modal__container{
+    .modal__container_1{
         padding: 2em 2em;
     }
 
-    .modal__title{
+    .modal__title_1{
         font-size: 1rem;
     }
 
